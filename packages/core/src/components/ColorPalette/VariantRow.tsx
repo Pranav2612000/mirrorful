@@ -14,8 +14,8 @@ import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { BsSliders2 } from 'react-icons/bs'
 import {
-  MdOutlineCheckBox,
-  MdOutlineCheckBoxOutlineBlank,
+  MdOutlineRadioButtonUnchecked,
+  MdOutlineRadioButtonChecked
 } from 'react-icons/md'
 import tinycolor from 'tinycolor2'
 
@@ -203,9 +203,9 @@ export function VariantRow({
                 aria-label="Select as base"
                 icon={
                   isBase ? (
-                    <MdOutlineCheckBox />
+                    <MdOutlineRadioButtonChecked />
                   ) : (
-                    <MdOutlineCheckBoxOutlineBlank />
+                    <MdOutlineRadioButtonUnchecked />
                   )
                 }
               />
